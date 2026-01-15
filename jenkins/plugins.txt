@@ -1,0 +1,25 @@
+# Pipeline 기본
+workflow-aggregator
+pipeline-stage-view
+build-timeout
+timestamper
+ws-cleanup
+
+# Git/SCM
+git
+git-client
+scm-api
+
+# GitLab 연동(웹훅/브랜치소스)
+gitlab-plugin
+gitlab-branch-source
+
+# Docker 파이프라인 DSL
+docker-workflow
+
+# Credentials
+credentials-binding
+plain-credentials
+
+# Webhook 범용(선택이지만 있으면 편함)
+generic-webhook-trigger
