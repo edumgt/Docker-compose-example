@@ -1,11 +1,15 @@
-## 
-```
+# Tesseract OCR Docker 가이드 (Windows PowerShell)
+
+간단한 실행 예시:
+
+```powershell
 docker run --rm -v "${PWD}:/data" -w /data jitesoft/tesseract-ocr `
   -l eng image.png out
 ```
-# out.txt 생성됨
 
-# Tesseract (jitesoft/tesseract-ocr) Docker 실행 오류 정리 (Windows PowerShell)
+> 실행 결과: `out.txt` 생성됨
+
+# Tesseract (jitesoft/tesseract-ocr) Docker 실행 오류 정리
 
 아래 내용은 다음과 같은 로그를 기준으로 정리한 해결 가이드입니다.
 
@@ -146,6 +150,15 @@ docker run --rm --user 0:0 -v "${PWD}:/data" -w /data my-tesseract-kor `
   -l kor+eng image.png out
 ```
 
+---
+
+## 스크린샷
+
+아래 이미지는 예시 캡처로, README에서 잘 보이도록 크게 표시했습니다.
+
+<p align="center">
+  <img src="./gitlab_관리자의셋팅.png" alt="GitLab 관리자 설정 캡처" width="800" />
+</p>
 
 ## todo 
 ### fastapi 에 OCR 연동해서 API Serving
